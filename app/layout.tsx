@@ -25,11 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <title>RUDRA</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sunny Bharne" />
+        <meta name="description" content="RUDRA Game" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} > {children} </body>
     </html>
   );
 }
